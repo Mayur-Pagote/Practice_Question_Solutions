@@ -4,16 +4,17 @@ class Solution(object):
         target = max(nums)
         
         # Initialize variables for the length of the current subarray and the maximum length found
-        size, res = 0, 0
+        count = 0
+        result = 0
         
         # Go through each number in the list
-        for n in nums:
-            if n == target:
-                size += 1
+        for i in nums:
+            if i == target:
+                count += 1
             else:
-                size = 0
+                count = 0
             
             # Update the maximum length if needed
-            res = max(res, size)
+            result = max(result, count)
         
-        return res
+        return result
