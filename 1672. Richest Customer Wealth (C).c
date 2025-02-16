@@ -1,8 +1,6 @@
 int maximumWealth(int** accounts, int accountsSize, int* accountsColSize) {
 
-    int max = 0; // Initializing max variable with 0
-
-    // Iterating through every customer's wealth
+    int max = 0; 
     for (int i=0; i<accountsSize; i++){
         int count = 0;
         for (int j=0; j<*accountsColSize; j++){
