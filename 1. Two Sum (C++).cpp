@@ -2,10 +2,9 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
 
-        int n = nums.size();  // Storing length of vector.
-        vector<int> index_list; // New vector to store index of nums if target matches.
+        int n = nums.size();  
+        vector<int> index_list; 
 
-        // Iterating through nums.
         for (int i = 0; i<n; i++){
             for (int j = i+1; j<n; j++){
                 if (nums[i] + nums[j] == target){
